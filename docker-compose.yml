@@ -9,6 +9,7 @@ services:
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
       - ./certs:/etc/nginx/certs
+      - ./conf.d/proxy.conf:/etc/nginx/conf.d/proxy.conf:ro
     networks:
       - nginx-proxy
 
